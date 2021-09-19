@@ -2,11 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You will find a Log In authentication component, with the possibility to Sign In with Google. Also you can create a New Account.
+
+Everything will be stored in Firebase. You will need to create a Firebase account and modify the credentails in the firebaseConfig file.
+
+It uses SASS for Styling. Redux for centralizing the application state. Redux Thunk as a middleware. Sweetalert2 for PopUp boxes. Validator for forms  validation. React Router for routing. Firebase as a BaaS.
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
