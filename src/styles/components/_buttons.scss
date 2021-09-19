@@ -1,0 +1,70 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+
+    transition: color .3s ease;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: darken($color: white, $amount: 10)
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-radius: 2px;
+
+    &:disabled {
+        background-color: lighten($color: $primary, $amount: 15);
+    }
+
+    &:hover {
+        background-color: darken($color: $primary, $amount: 5);
+    }
+}
+
+.btn-block {
+    margin-block: 20px;
+    padding: 10px 40px;
+    width: 100%;
+    box-shadow: 0 3px 4px 0 rgb(0 0 0 / 25%);
+}
+
+
+.google-btn {
+    box-sizing: border-box;
+    width: 100%;
+    margin-block: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 10px 40px;
+    background-color: $google-blue;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: box-shadow .3s ease;
+
+    .btn-text {
+
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+    &:hover {
+        box-shadow: 0 0 6px $google-blue;
+    }
+    &:active {
+        background: $button-active-blue;
+    }
+}
